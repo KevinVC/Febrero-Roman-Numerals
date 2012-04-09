@@ -12,13 +12,21 @@ describe RomanNumerals do
 		}.should raise_exception
 	end
 
-	context "convert" do
+	context "convertir a romanos" do
 		it "convertir 1 en I" do
 			@romano.convert_Roman(1).should == "I"
 		end
 
 		it "convertir 2 en II" do
 			@romano.convert_Roman(2).should == "II"
+		end
+
+		it "convertir 3 en III" do
+			@romano.convert_Roman(3).should == "III"
+		end
+
+		it "convertir 4 en IV" do
+			@romano.convert_Roman(4).should == "IV"
 		end
 
 		it "convertir 5 en V" do
