@@ -13,9 +13,18 @@ describe RomanNumerals do
 	end
 
 	context "convert" do
+		it "convertir 1 en I" do
+			@romano.convert_Roman(1).should == "I"
+		end
+
+		it "convertir 2 en II" do
+			@romano.convert_Roman(2).should == "II"
+		end
+
 		it "convertir 5 en V" do
 			@romano.convert_Roman(5).should == "V"
 		end
+
 	end
 	
 end
